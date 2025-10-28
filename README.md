@@ -1,6 +1,6 @@
 # automated-monthly-reports
 
-[![CI](https://github.com/USERNAME/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/USERNAME/REPO/actions/workflows/ci.yml)
+[![CI](https://github.com/akispash/automated-monthly-reports/actions/workflows/ci.yml/badge.svg)](https://github.com/akispash/automated-monthly-reports/actions/workflows/ci.yml)
 
 One-line: Python utility to aggregate taxi route Excel reports and produce ranked summaries.
 
