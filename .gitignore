@@ -1,12 +1,9 @@
-# Virtual environment
+﻿# Virtual env and site-packages
 .venv/
-# Byte-compiled / caches
+# Build / packaging
+*.egg-info/
+*.dist-info/
+# Caches
 __pycache__/
 *.pyc
 .pytest_cache/
-# Editor/IDE
-.vscode/
-.idea/
-# OS
-.DS_Store
-Thumbs.db
