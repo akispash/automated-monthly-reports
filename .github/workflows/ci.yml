@@ -28,7 +28,7 @@ jobs:
       - name: Show Python info
         run: |
           python -V
-          python -c "import sys; print('PYTHONPATH entries:', [p for p in sys.path if p])"
+          python -c "import sys; print('sys.path sample:', sys.path[:6])"
           pip list
       - name: Run tests
         run: |
