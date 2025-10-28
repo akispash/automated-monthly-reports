@@ -1,10 +1,20 @@
 # automated-monthly-reports
 
+[![CI](https://github.com/USERNAME/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/USERNAME/REPO/actions/workflows/ci.yml)
+
 One-line: Python utility to aggregate taxi route Excel reports and produce ranked summaries.
+
+## Features
+- Read Excel reports with configurable sheet names and column conventions.
+- Two flows:
+  - Flow A: workbook with sheets "Ανάλυση ανά δρομολόγιο" + "Σύνολο ανά αυτοκίνητο".
+  - Flow B: wide month sheet (dates × routes) + fares mapping sheet.
+- CLI wrapper: detect layout automatically or run explicit mode.
+- Unit tests and CI included.
 
 ## Quickstart
 1. Clone:
-   git clone https://github.com/akispash/automated-monthly-reports.git
+   git clone https://github.com/USERNAME/REPO.git
 2. Create & activate venv:
    python -m venv .venv
    source .venv/bin/activate   # Windows: .venv\Scripts\activate
@@ -13,15 +23,12 @@ One-line: Python utility to aggregate taxi route Excel reports and produce ranke
 4. Run (auto detect):
    python -m src.automated_reports.report_cli --input "Δρομολόγια Ταξι 25-26.xlsx"
 
-Run specific mode:
-- Flow A (workbook with sheets "Ανάλυση ανά δρομολόγιο" & "Σύνολο ανά αυτοκίνητο"):
+Examples:
+- Flow A:
   python -m src.automated_reports.report_cli --input "Αναφορά_Οκτώβριος.xlsx" --mode flowA --output "Κατάταξη_Οκτώβριος.xlsx"
 
-- Flow B (wide sheet + fares):
+- Flow B:
   python -m src.automated_reports.report_cli --input "Δρομολόγια Ταξι 25-26.xlsx" --mode wide --month "Οκτώβριος" --fares-sheet "Δρομολόγια" --output "Αναφορά_Οκτώβριος.xlsx"
 
 ## Tests
-pytest
-
-## License
-MIT
+Run locally:
