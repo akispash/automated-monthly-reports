@@ -1,3 +1,12 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "automated-monthly-reports"
+version = "0.1.0"
+description = "Utilities to aggregate taxi route Excel reports"
+authors = [{name = "ΧΡΥΣΟΒΑΛΑΝΤΗΣ ΠΑΣΧΑΛΙΔΗΣ"}]
+dependencies = ["pandas", "openpyxl"]
+readme = "README.md"
+license = {text = "MIT"}

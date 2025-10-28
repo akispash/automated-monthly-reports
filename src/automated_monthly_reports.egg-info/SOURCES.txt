@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/automated_monthly_reports.egg-info/PKG-INFO
+src/automated_monthly_reports.egg-info/SOURCES.txt
+src/automated_monthly_reports.egg-info/dependency_links.txt
+src/automated_monthly_reports.egg-info/requires.txt
+src/automated_monthly_reports.egg-info/top_level.txt
+tests/test_report.py
