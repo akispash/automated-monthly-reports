@@ -14,13 +14,17 @@ One-line: Python utility to aggregate taxi route Excel reports and produce ranke
 
 ## Quickstart
 1. Clone:
-   git clone https://github.com/USERNAME/REPO.git
+   git clone https://github.com/akispash/automated-monthly-reports.git
 2. Create & activate venv:
    python -m venv .venv
-   source .venv/bin/activate   # Windows: .venv\Scripts\activate
+   source .venv/bin/activate   # Windows: .\.venv\Scripts\Activate.ps1
 3. Install:
-   pip install -r requirements.txt
-4. Run (auto detect):
+   python -m pip install --upgrade pip
+   python -m pip install --upgrade build setuptools wheel
+   python -m pip install -e .
+   # αν υπάρχει requirements.txt (προαιρετικό)
+   python -m pip install -r requirements.txt
+5. Run (auto detect):
    python -m src.automated_reports.report_cli --input "Δρομολόγια Ταξι 25-26.xlsx"
 
 Examples:
