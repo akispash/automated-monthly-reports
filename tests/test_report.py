@@ -1,6 +1,6 @@
 import pandas as pd
 from pathlib import Path
-from src.automated_reports.report import process_report_flowA, process_report_wide
+from automated_monthly_reports.report import process_report_flowA, process_report_wide
 
 def make_sample_flowA(path: Path):
     df_routes = pd.DataFrame({
