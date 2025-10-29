@@ -16,3 +16,4 @@ dependencies = [
 ]
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["automated_monthly_reports*"]
